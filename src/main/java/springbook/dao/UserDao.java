@@ -2,10 +2,12 @@ package springbook.dao;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContextExtensionsKt;
 import springbook.domain.User;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class UserDao {
     private final ConnectionMaker connectionMaker;
